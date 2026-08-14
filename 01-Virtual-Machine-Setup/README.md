@@ -36,6 +36,7 @@ Created a new VirtualBox VM named:
 
 The VM was configured with 4 virtual CPUs, 6 GB RAM and an 80 GB virtual disk.
 
+
 ### 2. Windows 11 Installation
 
 Mounted the official Windows 11 ISO and installed Windows 11 Pro.
@@ -58,7 +59,7 @@ After installation:
 
 ### 4. VirtualBox Guest Additions
 
-Installed VirtualBox Guest Additions for improved VM integration.
+VirtualBox Guest Additions was installed to improve integration between the host machine and the virtual machine.
 
 This enabled:
 
@@ -72,13 +73,13 @@ Created a VirtualBox snapshot:
 
 `Clean Windows 11 - Before SOC Lab`
 
-This snapshot provides a clean rollback point before beginning SOC lab configuration.
+A clean VirtualBox snapshot was created before beginning SOC lab configuration. This snapshot provides a clean rollback point.
 
 ---
 
 ## Problems Encountered
 
-### Windows 11 initially failed to boot
+### VM Windows 11 initially failed to boot
 
 VirtualBox reported that no bootable operating system could be found.
 
@@ -107,6 +108,17 @@ The `VBoxGuestAdditions.iso` image was then mounted successfully.
 The Windows 11 VM was successfully installed, updated and configured with Guest Additions.
 
 A clean baseline snapshot was created before beginning SOC lab configuration.
+
+### Lessons Learned
+
+This setup process reinforced the importance of:
+
+- Correct VM hardware configuration
+- Understanding virtual optical drives
+- Checking boot order when a VM fails to start
+- Using snapshots before making major configuration changes
+- Installing Guest Additions for improved VM usability
+
 
 ---
 
