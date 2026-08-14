@@ -24,6 +24,8 @@ The virtual machine will be used to generate security telemetry, simulate suspic
 | Graphics Controller | VBoxSVGA |
 | Guest Additions | Installed |
 
+![VirtualBox VM Configuration](Screenshots/Creating%20VM.png)
+
 ---
 
 ## Installation Process
