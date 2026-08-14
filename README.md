@@ -53,6 +53,7 @@ The goal of this project is to build an isolated SOC environment where I can:
                     │ Detection Rules     │
                     │ Investigation       │
                     └─────────────────────┘
+```
 
 ---
 
