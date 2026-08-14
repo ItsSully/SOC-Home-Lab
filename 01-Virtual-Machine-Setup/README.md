@@ -24,8 +24,6 @@ The virtual machine will be used to generate security telemetry, simulate suspic
 | Graphics Controller | VBoxSVGA |
 | Guest Additions | Installed |
 
-![VirtualBox VM Configuration](Screenshots/Creating%20VM.png)
-
 ---
 
 ## Installation Process
@@ -39,6 +37,12 @@ Created a new VirtualBox VM named:
 The VM was configured with 4 virtual CPUs, 6 GB RAM and an 80 GB virtual disk.
 
 
+![VirtualBox VM Configuration](Screenshots/Creating%20VM.png)
+
+
+![VirtualBox VM Configuration](Screenshots/VM%20Created.png)
+
+
 ### 2. Windows 11 Installation
 
 Mounted the official Windows 11 ISO and installed Windows 11 Pro.
@@ -48,6 +52,10 @@ During installation, Windows reported that the processor did not meet the minimu
 The VM configuration was checked and the number of virtual CPUs was increased to 4.
 
 The installation then continued successfully.
+
+
+![Windows 11 Installation](Screenshots/Windows%20Installation%20Working....png)
+
 
 ### 3. Windows Configuration
 
@@ -69,13 +77,29 @@ This enabled:
 - Dynamic screen resizing
 - Improved interaction between the host and guest operating system
 
-### 5. Baseline Snapshot
+
+![Guest Additions](Screenshots/VM%20Guest%20Addition%20Download....png)
+
+
+### 5. Final VM
+
+After installation and configuration, the Windows 11 virtual machine was successfully booted and verified.
+
+
+![Final SOC Windows VM](Screenshots/Final%20SOC%20Window.png)
+
+
+### 6. Baseline Snapshot
 
 Created a VirtualBox snapshot:
 
 `Clean Windows 11 - Before SOC Lab`
 
 A clean VirtualBox snapshot was created before beginning SOC lab configuration. This snapshot provides a clean rollback point.
+
+
+![Clean Baseline Snapshot](Screenshots/Clean%20Baseline%20Snapshot.png)
+
 
 ---
 
