@@ -78,7 +78,7 @@ This enabled:
 - Improved interaction between the host and guest operating system
 
 
-![Guest Additions](Screenshots/VM%20Guest%20Addition%20Download.png)
+![Guest Additions](Screenshots/VM%20Guest%20Addition%20Downloaded%20Evidence.png)
 
 
 ### 5. Final VM
