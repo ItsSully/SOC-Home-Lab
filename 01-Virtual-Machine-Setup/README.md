@@ -54,7 +54,7 @@ The VM configuration was checked and the number of virtual CPUs was increased to
 The installation then continued successfully.
 
 
-![Windows 11 Installation](Screenshots/Windows%20Installation%20Working....png)
+![Windows 11 Installation](Screenshots/Windows%20Installation%20Working.png)
 
 
 ### 3. Windows Configuration
@@ -78,7 +78,7 @@ This enabled:
 - Improved interaction between the host and guest operating system
 
 
-![Guest Additions](Screenshots/VM%20Guest%20Addition%20Download....png)
+![Guest Additions](Screenshots/VM%20Guest%20Addition%20Download.png)
 
 
 ### 5. Final VM
