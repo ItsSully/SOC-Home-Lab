@@ -53,3 +53,17 @@ The goal of this project is to build an isolated SOC environment where I can:
                     │ Detection Rules     │
                     │ Investigation       │
                     └─────────────────────┘
+
+---
+
+## 🛠️ Technologies
+- Windows 11
+- Oracle VirtualBox
+- Windows Event Viewer
+- Windows Security Auditing
+- Sysmon
+- PowerShell
+- SIEM
+- MITRE ATT&CK
+- Git
+- GitHub
