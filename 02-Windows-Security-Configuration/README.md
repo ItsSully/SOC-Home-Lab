@@ -53,7 +53,7 @@ Network configuration
 System boot information
 Installed Windows hotfixes
 
-![System Baseline Snapshot](Screenshots/System%20Baseline%20Snapshot.png)
+![System Information](Screenshots/System%20Information.png)
 
 ---
 
