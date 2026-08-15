@@ -35,7 +35,7 @@ The lab was configured to provide a controlled environment for practising SOC an
 
 PowerShell was opened with administrator privileges to allow security configuration and event log investigation.
 
-![Administrator PowerShell](Screenshots/Admin%20PowerShell%20Open.png)
+![Admin Powershell Open](Screenshots/Admin%20Powershell%20Open.png)
 
 ---
 
