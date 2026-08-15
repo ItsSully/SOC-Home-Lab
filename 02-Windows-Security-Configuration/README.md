@@ -53,6 +53,8 @@ Network configuration
 System boot information
 Installed Windows hotfixes
 
+![System Baseline Snapshot](Screenshots/System%20Baseline%20Snapshot.png)
+
 ---
 
 ### 3. Windows Firewall Verification
@@ -97,6 +99,8 @@ Why this matters:
 
 Security Event Logs provide valuable telemetry for detecting and investigating suspicious activity on Windows systems.
 
+![System Event Log Baseline](Screenshots/System%20Event%20Log%20Baseline.png)
+
 ---
 
 ### 6. Reviewing Recent Security Events
@@ -107,6 +111,8 @@ The most recent Security events were queried using PowerShell.
 Select-Object TimeCreated, Id, LevelDisplayName, ProviderName`
 
 This provided a quick overview of recent security activity.
+
+![Recent Security Events](Screenshots/Recent%20Security%20Events.png)
 
 ---
 
