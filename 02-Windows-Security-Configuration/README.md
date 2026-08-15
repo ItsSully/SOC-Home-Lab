@@ -123,7 +123,7 @@ Why this matters:
 
 Security Event Logs provide valuable telemetry for detecting and investigating suspicious activity on Windows systems.
 
-![System Event Log Baseline](Screenshots/System%20Event%20Log%20Baseline.png)
+![System Event Log Baseline](Screenshots/Security%20Event%20Log%20Baseline.png)
 
 ---
 
