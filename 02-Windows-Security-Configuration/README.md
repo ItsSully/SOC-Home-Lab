@@ -31,6 +31,26 @@ The lab was configured to provide a controlled environment for practising SOC an
 
 ---
 
+## Security Baseline Snapshot
+
+Before beginning the SOC lab configuration, a VirtualBox snapshot was created to preserve a clean and recoverable state of the Windows 11 virtual machine.
+
+The snapshot was named:
+
+**`Clean Windows 11 - Before SOC Lab`**
+
+The snapshot provides a rollback point that can be used if later lab configuration or testing causes problems with the virtual machine.
+
+![Security Baseline Snapshot](Screenshots/Security%20Baseline%20Snapshot.png)
+
+### Why this is important
+
+Snapshots are useful in a security lab because they allow experiments and configuration changes to be performed safely.
+
+If the VM becomes misconfigured or compromised during later exercises, the environment can be restored to this known-good baseline.
+
+---
+
 ### 1. PowerShell Environment
 
 PowerShell was opened with administrator privileges to allow security configuration and event log investigation.
@@ -45,13 +65,13 @@ The `systeminfo` command was used to collect information about the Windows envir
 
 This provided information including:
 
-Windows version and build
-System architecture
-Processor information
-Installed memory
-Network configuration
-System boot information
-Installed Windows hotfixes
+- Windows version and build
+- System architecture
+- Processor information
+- Installed memory
+- Network configuration
+- System boot information
+- Installed Windows hotfixes
 
 ![System Information](Screenshots/System%20Information.png)
 
@@ -71,6 +91,8 @@ A host-based firewall provides an additional layer of protection by controlling 
 
 For a SOC analyst, firewall status is an important part of establishing a basic endpoint security baseline.
 
+![Windows Firewall Baseline](Screenshots/Windows%20Firewall%20Baseline.png)
+
 ---
 
 ### 4. Windows Defender Verification
@@ -84,6 +106,8 @@ The results confirmed that the main Defender protection features were enabled.
 Security significance:
 
 Verifying endpoint protection is an important baseline check when preparing a Windows workstation for security monitoring.
+
+![Windows Defender Baseline](Screenshots/Windows%20Defender%20Baseline.png)
 
 ---
 
@@ -136,6 +160,9 @@ SOC relevance
 
 Successful logon events can be used to investigate unusual authentication activity, particularly when combined with other events and contextual information.
 
+![Event 4624 Investigation 1](Screenshots/Event%204624%20Investigation%201.png)
+![Event 4624 Investigation 2](Screenshots/Event%204624%20Investigation%202.png)
+
 ---
 
 ### 8. Event ID 4672 — Special Privileges Assigned
@@ -150,6 +177,8 @@ The event showed that special privileges were assigned to the SYSTEM account.
 SOC relevance
 
 Privileged activity is important to monitor because attackers may attempt to obtain elevated privileges after gaining access to a system.
+
+![Event 4672 Investigation](Screenshots/Event%204672%20Investigation.png)
 
 ---
 
@@ -189,6 +218,9 @@ Was the account creation authorised?
 What privileges were assigned?
 What activity occurred after the account was created?
 
+![Event 4720 Account Created](Screenshots/Event%204720%20Account%20Created.png)
+
+
 ---
 
 ### 10. Controlled Account Deletion Test
@@ -215,6 +247,8 @@ Action: User account deleted
 Target account: SOC-TestUser
 Account performing the action: Sully
 Provider: Microsoft-Windows-Security-Auditing
+
+![Event 4726 Account Deleted](Screenshots/Event%204726%20Account%20Deleted.png)
 
 ---
 
